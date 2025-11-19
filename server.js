@@ -12,9 +12,6 @@ const publicDir = path.join(process.cwd(), "public");
 const uploadProjectsDir = path.join(process.cwd(), "uploads", "projects");
 const uploadSubmissionsDir = path.join(process.cwd(), "uploads", "submissions");
 
-fs.mkdirSync(dataDir, { recursive: true });
-fs.mkdirSync(publicDir, { recursive: true });
-fs.mkdirSync(uploadSubmissionsDir, { recursive: true });
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
